@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Firebase User Authentication</title>
+  <!-- Include Firebase SDK -->
   <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
 </head>
@@ -11,7 +12,7 @@
   <h1>Firebase User Authentication</h1>
 
   <h2>Sign Up</h2>
-  <input type="emaill" id="signup-email" placeholder="Email">
+  <input type="email" id="signup-email" placeholder="Email">
   <input type="password" id="signup-password" placeholder="Password">
   <button onclick="signUp()">Sign Up</button>
 
@@ -22,17 +23,18 @@
 
   <script>
     // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "YOUR_API_KEY",
-      authDomain: "YOUR_AUTH_DOMAIN",
-      projectId: "YOUR_PROJECT_ID",
-      storageBucket: "YOUR_STORAGE_BUCKET",
-      messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-      appId: "YOUR_APP_ID"
+    const firebaseConfig = {
+      apiKey: "AIzaSyAdJH2ALu4Pv6yXwSpj6j7xgFzK5N6c3oM",
+      authDomain: "makeawebsite-cba64.firebaseapp.com",
+      projectId: "makeawebsite-cba64",
+      storageBucket: "makeawebsite-cba64.appspot.com",
+      messagingSenderId: "299268849220",
+      appId: "1:299268849220:web:f97d0feb962a48f8284611",
+      measurementId: "G-C7QF3106PD"
     };
     
     // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+    const app = firebase.initializeApp(firebaseConfig);
 
     const auth = firebase.auth();
 
